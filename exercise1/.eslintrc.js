@@ -56,7 +56,8 @@ module.exports = {
     // plugin: 开头的是插件类型，在扩展中引入插件
     // eslint-config- 开头的就是普通的扩展包，官方规定扩展必须以 eslint-config- 开头，使用时可以省略这个头部
     extends: [
-        'eslint:recommended'
+        'eslint:recommended',
+        'plugin:prettier/recommended'
     ],
     // 虽然官方提供了上百种的规则可供选择，但是这不够，因为官方的规则只能检查标准的 JavaScript 语法
     // 如果是 JSX 或 Vue 单文件组件，就束手无策了
