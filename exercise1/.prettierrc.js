@@ -12,7 +12,7 @@ module.exports = {
     // 文件换行格式 LF/CRLF
     endOfLine: 'lf',
     // 使用 4 个空格缩进
-    tabWidth: 4,
+    tabWidth: 2,
     // 不使用缩进符，而使用空格
     useTabs: false,
     // 对象的 key 仅在必要时用引号
@@ -29,5 +29,5 @@ module.exports = {
     // 使用默认的折行标准
     proseWrap: 'preserve',
     // Vue 文件脚本和样式标签缩进
-    vueIndentScriptAndStyle: true
+    vueIndentScriptAndStyle: false
 };

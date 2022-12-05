@@ -1,12 +1,16 @@
 {
   "scripts": {
-    "eslint": "eslint src",
-    "eslint:fix": "eslint src --fix"
+    "lint": "eslint --ext .js,.vue src",
+    "lint:fix": "eslint --fix --ext .js,.vue src"
   },
   "devDependencies": {
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.vue": "eslint"
   }
 }
