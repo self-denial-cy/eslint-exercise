@@ -1,4 +1,11 @@
 {
   "*.js": "eslint",
-  "*.vue": "eslint"
+  "*.vue": [
+    "stylelint",
+    "eslint"
+  ],
+  "*.css": "stylelint",
+  "*.scss": "stylelint",
+  "*.less": "stylelint",
+  "*.html": "stylelint"
 }
