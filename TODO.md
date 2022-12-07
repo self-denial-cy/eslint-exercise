@@ -1,1 +1,2 @@
-- [ ] [贡献指南](https://zh-hans.eslint.org/docs/latest/developer-guide)
+- [ ] [贡献指南](https://eslint.org/docs/latest/developer-guide)
+- [ ] TypeScript + ESLint 实践（深入学习 TypeScript 后）
