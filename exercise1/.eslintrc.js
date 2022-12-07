@@ -16,7 +16,7 @@ module.exports = {
       // 是否允许在全局作用域下使用 return 语句
       globalReturn: false,
       // 是否启用全局严格模式
-      impliedStrict: false,
+      impliedStrict: true,
       // 是否启用 JSX（启用 JSX 语法不等于支持 React，React 将特定语义应用在 JSX 上以至 eslint 无法识别，使用 eslint-plugin-react 支持 React）
       jsx: false
     }
@@ -24,8 +24,8 @@ module.exports = {
   // eslint 会检测未声明的变量并发出警告，但有些变量是引入的库声明的
   globals: {
     // 如果项目中引入了 jQuery，声明 $ 为全局变量
-    // true 表示该变量 writable | false 表示 readonly
-    // '$': false
+    // writable 表示该变量 writable | readonly 表示 readonly
+    // '$': readonly
   },
   // 在 globals 中一个一个的声明全局变量未免有点繁琐，在 env 中可以对一个环境中的一组全局变量进行预设
   // 预设的数据来源：https://github.com/eslint/eslint/blob/v6.0.1/conf/environments.js 和 https://github.com/sindresorhus/globals/blob/main/globals.json
