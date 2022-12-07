@@ -6,7 +6,8 @@ module.exports = {
     // 解析器：eslint 的默认解析器是 espree，配合核心规则只支持最新的 ECMAScript 标准
     // 对于一些实验性的语法或者是新特性，需要 @babel/eslint-parser 来解析，@babel/eslint-plugin 来补充规则，这样 eslint 就能对这些高级语法或新特性进行检测
     // 对于 TypeScript，需要 @typescript-eslint/parser 来解析，@typescript-eslint/eslint-plugin 来补充规则，这样 eslint 就能对 TypeScript 进行检测
-    parser: 'espree', // vue-plugin-vue 需要使用 vue-eslint-parser 解析 .vue 文件，因此只能在 parserOptions 中设置自定义 parser
+    // parser: 'espree', // vue-plugin-vue 需要使用 vue-eslint-parser 解析 .vue 文件，因此只能在 parserOptions 中设置自定义 parser
+    parser: '@babel/eslint-parser',
     // 是否启用 ESM
     sourceType: 'module',
     // es 版本号
@@ -61,5 +62,5 @@ module.exports = {
   // 这时候需要安装 eslint 插件，来定制一些特定规则
   // 官方规定插件必须以 eslint-plugin- 开头，使用时可以省略这个头部
   // 或者是在扩展中引入插件，`plugin:${pluginName}/${configName}`
-  plugins: []
+  plugins: ['@babel/eslint-plugin']
 };
